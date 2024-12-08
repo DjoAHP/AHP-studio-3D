@@ -11,7 +11,7 @@ const canvasRect = document.getElementById("canvas");
 const scene = new THREE.Scene();
 
 // Charger l'environnement HDRI
-const hdrEquirect = new RGBELoader().load("./HDR/hdri-Bleu-panoramas.hdr", (texture) => {
+const hdrEquirect = new RGBELoader().load("../HDR/hdri-Bleu-panoramas.hdr", (texture) => {
   texture.mapping = THREE.EquirectangularReflectionMapping;
   texture.encoding = THREE.RGBEEncoding;
   scene.environment = texture;
@@ -91,7 +91,7 @@ const textureLoader = new THREE.TextureLoader();
 
 // Charger les textures pour les imperfections
 const roughnessMap = textureLoader.load(
-  './models/textures/finger-lentille-opacity.jpg',
+  '../models/textures/finger-lentille-opacity.jpg',
   function(texture) {
     console.log('Texture rayures chargée');
     texture.encoding = THREE.sRGBEncoding;
@@ -105,7 +105,7 @@ const roughnessMap = textureLoader.load(
 // NORMAL
 
 const normalMap = textureLoader.load(
-  './models/textures/lentille-normal.jpg',
+  '../models/textures/lentille-normal.jpg',
   function(texture) {
     console.log('Texture normal map chargée');
     texture.encoding = THREE.LinearEncoding;
@@ -128,7 +128,7 @@ normalMap.wrapS = normalMap.wrapT = THREE.RepeatWrapping;
 
 // ---------- ⥥ MODEL ⥥ ----------
 // URL du modèle local
-const MODEL_URL = './models-optimized/Super8-final-01-compressed.glb';
+const MODEL_URL = '../models-optimized/Super8-final-01-compressed.glb';
 
 // Configuration du DRACOLoader
 const dracoLoader = new DRACOLoader();
