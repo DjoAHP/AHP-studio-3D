@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AHP studio</title>
+  <link rel="icon" type="image/x-icon" href="./logo-vide-ombre-porte.ico">
+  <link rel="stylesheet" href="loader/loader.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-section2-studio.css">
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+      <span class="percentage">0%</span>
+    </div>
+  </div>
+
+  <!-- Logo -->
+  <div class="logo-container" id="logo-btn">
+    <img src="logo/logo 2025 SVG.svg" alt="Logo" class="logo">
+  </div>
+
+  <!-- ---------- ⥥ MENU HAUT DROITE ⥥ ---------- -->
+  <nav class="menu-container">
+    <div class="menu">
+      <a href="#section-1" class="menu-item">
+        <div class="text-wrapper">
+          <span class="text">ACCUEIL</span>
+          <span class="text-deep">ACCUEIL</span>
+        </div>
+      </a>
+      <a href="#section-studio" class="menu-item">
+        <div class="text-wrapper">
+          <span class="text">STUDIO</span>
+          <span class="text-deep">STUDIO</span>
+        </div>
+      </a>
+      <a href="#section-concert" class="menu-item">
+        <div class="text-wrapper">
+          <span class="text">CONCERTS</span>
+          <span class="text-deep">CONCERTS</span>
+        </div>
+      </a>
+      <a href="#section-coutellerie" class="menu-item">
+        <div class="text-wrapper">
+          <span class="text">COUTELLERIE</span>
+          <span class="text-deep">COUTELLERIE</span>
+        </div>
+      </a>
+      <a href="#section-clips" class="menu-item">
+        <div class="text-wrapper">
+          <span class="text">CLIPS</span>
+          <span class="text-deep">CLIPS</span>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- ---------- ⥥ SCROLL DOWN ⥥ ---------- -->
+  <div class="main-container">
+
+    <section class="section" id="section-1">
+
+      <div class="scroll-container" id="scroll-btn">
+        <div class="scroll-ring">
+          <div class="scroll-ball"></div>
+          <div class="glow"></div>
+        </div>
+        <div class="chevron-stack">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
+      </div>
+
+      <!-- THREE JS-->
+      <div class="headline-container">
+        <div id="text-behind">AHP<br />studio</div>
+        <div id="text-behind-blur">AHP<br />studio</div>
+        <div id="text-front">AHP<br />studio</div>
+      </div>
+
+      <div class="canvas-container">
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <div class="more-content"></div>
+
+      <!-- TITRE -->
+      <div class="text-container">
+        <div class="title">
+          AHP-studio
+          <br />
+          <a href="https://www.instagram.com/ahp.studiovj/" target="_blank">@ahp.studiovj</a>
+        </div>
+        <!-- INSTA ICONE -->
+        <div class="socials">
+          <a href="https://www.instagram.com/ahp.studiovj/" target="_blank">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+          <!-- FACEBOOK ICONE -->
+          <a href="#" target="_blank">
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+          <!-- SITE ICONE -->
+          <a href="https://www.youtube.com/@AtHomeKnife" target="_blank">
+            <i class="bx bx-globe"></i>
+          </a>
+          <!-- YOUTUBE ICONE -->
+          <a href="https://www.youtube.com/@AtHomeKnife" target="_blank">
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-studio">
+      <!-- Section Studio -->
+      <div class="studio-content">
+        <div class="studio-text">
+          <!-- Section Studio -->
+        </div>
+        <div class="studio-video-container">
+
+          <video class="studio-video" autoplay muted loop>
+            <source src="https://res.cloudinary.com/dkihbrjno/video/upload/v1733687500/video-test-720_ke66bk.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+          </video>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="section-concert">
+      Section Concerts
+    </section>
+    <section id="section-coutellerie">
+      Section Coutellerie
+    </section>
+    <section id="section-clips">
+      Section Clips
+    </section>
+
+  </div>
+  <!-- SCRIPT -->
+  <script type="module" src="script.js"></script>
+  <script src="js/studio-parallax.js"></script>
+</body>
+
+</html>
